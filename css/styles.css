@@ -1,0 +1,75 @@
+/* paddingi i marginesy sa dodane z bootstrapa */
+
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+#title {
+    background-color: #ff4c68;
+    text-align: left;
+    color: #fff;
+}
+
+/* mozna tak nadpisywac czy jest jakis inny sposób */
+
+/* tam gdzie dodajesz  padding dodaj klasę "my padding" */
+
+.container-fluid.my-padding {
+    padding: 3% 14% 7%;
+}
+
+/* dodana nowa klasa, wole padding w % w tym przypadku*/
+
+.btn-download {
+    margin: 5% 3% 5% 0%;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.big-text {
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.nav-link {
+    font-family: "Montserrat-Light";
+    font-size: 1.5rem;
+}
+
+.title-image {
+    width: 60%;
+    position: absolute;
+    transform: rotate(25deg);
+    right: 15%;
+    /* Zamiast tego: załatwi za nas "#title {text align}"
+    margin: auto;
+    display: block; */
+}
+
+@media only screen and (max-width: 1028px) {
+    .title-image {
+        position: static;
+        transform: rotate( 0deg);
+    }
+    #title {
+        text-align: center;
+    }
+}
+
+/* to na chwile: dla testu pozycji komórki */
+
+#features {
+    z-index: 1000;
+    background-color: white;
+    position: relative;
+    /* Na pozór: */
+    height: 1000px;
+}
+
+/* ................................. */
