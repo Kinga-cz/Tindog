@@ -32,14 +32,14 @@ body {
 }
 
 .big-text {
-    font-family: "Montserrat-Black";
     font-size: 3.5rem;
     line-height: 1.5;
+    font-weight: 900;
 }
 
 .nav-link {
-    font-family: "Montserrat-Light";
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .title-image {
@@ -62,14 +62,30 @@ body {
     }
 }
 
-/* to na chwile: dla testu pozycji komórki */
-
 #features {
     z-index: 1000;
     background-color: white;
     position: relative;
-    /* Na pozór: */
-    height: 1000px;
 }
 
-/* ................................. */
+.features-box {
+    padding: 4.5%;
+}
+
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
+
+.features-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.features-box>p {
+    color: #8f8f8f;
+}
