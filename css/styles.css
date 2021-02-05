@@ -52,16 +52,6 @@ body {
     display: block; */
 }
 
-@media only screen and (max-width: 1028px) {
-    .title-image {
-        position: static;
-        transform: rotate( 0deg);
-    }
-    #title {
-        text-align: center;
-    }
-}
-
 #features {
     z-index: 1000;
     background-color: white;
@@ -88,4 +78,36 @@ body {
 
 .features-box>p {
     color: #8f8f8f;
+}
+
+.carousel-header {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.carousel {
+    background-color: #ef8172;
+    color: white;
+}
+
+.carousel-img {
+    width: 10%;
+    margin: 3% 0 2% 0;
+}
+
+.carousel-info {
+    display: block;
+}
+
+@media only screen and (max-width: 1028px) {
+    .title-image {
+        position: static;
+        transform: rotate( 0deg);
+    }
+    #title {
+        text-align: center;
+    }
+    .carousel-img {
+        width: 20%;
+    }
 }
