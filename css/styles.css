@@ -5,6 +5,14 @@ body {
     text-align: center;
 }
 
+p {
+    color: #8f8f8f;
+}
+
+.white-section {
+    background-color: white;
+}
+
 #title {
     background-color: #ff4c68;
     text-align: left;
@@ -15,8 +23,20 @@ body {
 
 /* tam gdzie dodajesz  padding dodaj klasę "my padding" */
 
-.container-fluid.my-padding {
+#title .container-fluid {
     padding: 3% 14% 7%;
+}
+
+#features .container-fluid {
+    padding: 3% 14% 7%;
+}
+
+#testimonials .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+#pricing .container-fluid {
+    padding: 7% 5% 7% 5%;
 }
 
 /* dodana nowa klasa, wole padding w % w tym przypadku*/
@@ -32,7 +52,7 @@ body {
 }
 
 .big-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.5;
     font-weight: 900;
 }
@@ -54,7 +74,6 @@ body {
 
 #features {
     z-index: 1000;
-    background-color: white;
     position: relative;
 }
 
@@ -72,22 +91,16 @@ body {
 }
 
 .features-title {
-    font-size: 1.5rem;
     font-weight: 700;
 }
 
-.features-box>p {
-    color: #8f8f8f;
+#testimonials {
+    background-color: #ef8172;
+    color: white;
 }
 
 .carousel-header {
-    font-size: 3rem;
     line-height: 1.5;
-}
-
-.carousel {
-    background-color: #ef8172;
-    color: white;
 }
 
 .carousel-img {
@@ -99,7 +112,35 @@ body {
     display: block;
 }
 
-@media only screen and (max-width: 1028px) {
+.pricing-column {
+    padding: 3% 2%;
+}
+
+.card-header {
+    padding: 0.8rem 1.3rem;
+}
+
+.card-body {
+    padding: 1.5rem 1.5rem;
+}
+
+.card-price {
+    line-height: 1.5;
+}
+
+@media (min-width: 1200px) {
+    .pricing-header {
+        font-size: 2.5rem;
+    }
+    .card-price {
+        font-size: 2.5rem;
+    }
+    .big-text {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
     .title-image {
         position: static;
         transform: rotate( 0deg);
@@ -110,4 +151,19 @@ body {
     .carousel-img {
         width: 20%;
     }
+    #testimonials .container-fluid {
+        padding: 5% 15% 7%;
+    }
 }
+
+@media only screen and (max-width: 991px) {
+    .title-image {
+        width: 50%;
+    }
+    #pricing .container-fluid {
+        padding: 8% 6% 8% 6%;
+    }
+}
+
+/*md-cards grid (trzeci jest na 6 gridach)
+}*/

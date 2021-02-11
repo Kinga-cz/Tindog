@@ -13,7 +13,7 @@
   <script src="https://kit.fontawesome.com/152b8d96c9.js" crossorigin="anonymous"></script>
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Ubuntu&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Ubuntu&display=swap"
     rel="stylesheet">
   <!-- my style -->
   <link rel="stylesheet" href="css/styles.css">
@@ -22,7 +22,7 @@
 <body>
 
   <section id="title">
-    <div class="container-fluid my-padding">
+    <div class="container-fluid">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark pb-5">
         <a class="navbar-brand" href="">tindog</a>
@@ -61,22 +61,22 @@
   </section>
 
   <!-- Features -->
-  <section id="features">
-    <div class="container-fluid my-padding">
+  <section id="features" class="white-section">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-4 features-box">
           <i class="fas fa-check-circle fa-4x icon"></i>
-          <h3 class="features-title">Easy to use.</h3>
+          <h4 class="features-title">Easy to use.</h4>
           <p>So easy to use, even your dog could do it.</p>
         </div>
         <div class="col-lg-4 features-box">
           <i class="fas fa-bullseye fa-4x icon"></i>
-          <h3 class="features-title">Elite Clientele</h3>
+          <h4 class="features-title">Elite Clientele</h4>
           <p>We have all the dogs, the greatest dogs.</p>
         </div>
         <div class="col-lg-4 features-box">
           <i class="fas fa-heart fa-4x icon"></i>
-          <h3 class="features-title">Guaranteed to work.</h3>
+          <h4 class="features-title">Guaranteed to work.</h4>
           <p>Find the love of your dog's life or your money back.</p>
         </div>
       </div>
@@ -100,10 +100,10 @@
             <h5>First slide label</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div> -->
-          <div class="container-fluid my-padding">
-            <h2 class="carousel-header">I no longer have to sniff other dogs for love. I've found the hottest Corgi on
+          <div class="container-fluid ">
+            <h1 class="carousel-header">I no longer have to sniff other dogs for love. I've found the hottest Corgi on
               TinDog.
-              Woof.</h2>
+              Woof.</h1>
             <img class="rounded-circle carousel-img" src="images/dog-img.jpg" alt="dog-profile">
             <em class="carousel-info">Pebbles, New York</em>
           </div>
@@ -114,10 +114,10 @@
             <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div> -->
-          <div class="container-fluid my-padding">
-            <h2 class="carousel-header">My dog used to be so lonely, but with TinDog's help, they've found the love of
+          <div class="container-fluid">
+            <h1 class="carousel-header">My dog used to be so lonely, but with TinDog's help, they've found the love of
               their
-              life. I think.</h2>
+              life. I think.</h1>
             <img class="rounded-circle carousel-img" src="images/lady-img.jpg" alt="lady-profile">
             <em class="carousel-info">Beverly, Illinois</em>
           </div>
@@ -135,52 +135,64 @@
     </div>
 
   </section>
-
-
-  <!-- Press -->
-
-  <!-- <section id="press"> -->
-  <!-- <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">-->
-
-  <!-- </section> -->
-
-
   <!-- Pricing -->
 
-  <!-- <section id="pricing">
+  <section id="pricing" class="white-section">
+    <div class="container-fluid my-padding">
+      <h2 class="pricing-header">A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for your and your dog.</p>
 
-    <h2>A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for your and your dog.</p>
-
-
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-  </section> -->
+      <div class="row">
+        <div class="col-md-6 col-lg-4 pricing-column">
+          <!-- Chihuahua -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Chihuahua</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="card-price">Free</h2>
+              <p class="card-text">5 Matches Per Day</p>
+              <p class="card-text">10 Messages Per Day</p>
+              <p class="card-text">Unlimited App Usage</p>
+              <a href="#" class="btn btn-outline-dark d-block">Sign Up</a>
+              <!-- button zrobie dispplay blockiem i width 100% -->
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-6 col-lg-4 pricing-column">
+          <!-- Labrador -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="card-price">$49 / mo</h2>
+              <p class="card-text">Unlimited Matches</p>
+              <p class="card-text">Unlimited Messages</p>
+              <p class="card-text">Unlimited App Usage</p>
+              <a href="#" class="btn btn-dark d-block">Sign Up</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 pricing-column">
+          <!-- Mastiff -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="card-price">$99 / mo</h2>
+              <p class="card-text">Pirority Listing</p>
+              <p class="card-text">Unlimited Matches</p>
+              <p class="card-text">Unlimited Messages</p>
+              <p class="card-text">Unlimited App Usage</p>
+              <a href="#" class="btn btn-dark d-block">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- Call to Action -->
